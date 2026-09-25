@@ -68,7 +68,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 18px 32px;
+  padding: 10px 32px;
   max-width: var(--maxw);
   margin: 0 auto;
 }
