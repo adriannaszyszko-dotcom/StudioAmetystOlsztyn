@@ -732,3 +732,50 @@ footer {
 .cta-band--soft p {
   margin-bottom: 22px;
 }
+
+/* POLITYKA PRYWATNOŚCI */
+.legal {
+  color: var(--lilac-300);
+}
+.legal > * {
+  max-width: 780px;
+}
+.legal h2 {
+  font-size: clamp(1.3rem, 2.4vw, 1.6rem);
+  color: var(--cream-100);
+  margin: 44px 0 14px;
+}
+.legal h2:first-child {
+  margin-top: 0;
+}
+.legal h3 {
+  font-size: 1.1rem;
+  color: var(--gold-300);
+  margin: 26px 0 8px;
+}
+.legal p,
+.legal ul {
+  margin-bottom: 12px;
+}
+.legal ul {
+  padding-left: 22px;
+}
+.legal li {
+  margin-bottom: 6px;
+}
+.legal a,
+.foot-bottom a {
+  color: var(--gold-300);
+}
+.legal a:hover,
+.foot-bottom a:hover {
+  color: var(--cream-100);
+}
+.legal strong {
+  color: var(--cream-100);
+  font-weight: 600;
+}
+.legal-date {
+  margin-top: 36px;
+  font-size: 0.88rem;
+}
