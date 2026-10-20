@@ -177,7 +177,7 @@ header {
 .page-hero h1 {
   font-size: clamp(2.2rem, 4.2vw, 3.2rem);
   color: var(--cream-100);
-  max-width: 18ch;
+  max-width: 26ch;
 }
 .page-hero p {
   margin-top: 18px;
@@ -499,7 +499,7 @@ section {
 .price-cat {
   margin-bottom: 56px;
 }
-.price-cat h3 {
+.price-cat h2 {
   font-family: "Fraunces", serif;
   font-size: 1.4rem;
   color: var(--gold-300);
@@ -649,7 +649,7 @@ footer {
   color: var(--lilac-300);
   font-size: 0.9rem;
 }
-.foot-col h4 {
+.foot-col .foot-title {
   font-size: 0.85rem;
   color: var(--gold-300);
   margin-bottom: 14px;
