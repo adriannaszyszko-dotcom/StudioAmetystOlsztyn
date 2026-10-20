@@ -779,3 +779,81 @@ footer {
   margin-top: 36px;
   font-size: 0.88rem;
 }
+
+/* BANER COOKIES */
+.consent {
+  position: fixed;
+  left: 16px;
+  right: 16px;
+  bottom: 16px;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+}
+.consent[hidden] {
+  display: none;
+}
+.consent-inner {
+  max-width: 760px;
+  width: 100%;
+  background: var(--ink-900);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 22px 24px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.45);
+}
+.consent-title {
+  font-family: "Fraunces", serif;
+  font-size: 1.15rem;
+  color: var(--cream-100);
+  margin-bottom: 6px;
+}
+.consent-text {
+  color: var(--lilac-300);
+  font-size: 0.9rem;
+  margin-bottom: 16px;
+}
+.consent-text a {
+  color: var(--gold-300);
+  text-decoration: underline;
+}
+.consent-options {
+  display: grid;
+  gap: 8px;
+  margin-bottom: 16px;
+  font-size: 0.9rem;
+  color: var(--cream-100);
+}
+.consent-options[hidden] {
+  display: none;
+}
+.consent-options input {
+  accent-color: var(--gold-400);
+  margin-right: 8px;
+}
+.consent-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: flex-end;
+}
+.consent-actions .btn {
+  justify-content: center;
+  padding: 10px 20px;
+  font-size: 0.88rem;
+  cursor: pointer;
+  background: none;
+  font-family: inherit;
+}
+.consent-actions .btn-primary {
+  background: var(--gold-400);
+  border: 1px solid var(--gold-400);
+}
+.consent-actions [hidden] {
+  display: none;
+}
+@media (max-width: 560px) {
+  .consent-actions .btn {
+    flex: 1 1 100%;
+  }
+}
