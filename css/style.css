@@ -76,7 +76,7 @@ header {
 .nav-brand-wrap {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   gap: 2px;
 }
 .nav-tagline {
@@ -118,6 +118,7 @@ header {
   color: var(--gold-300);
 }
 .nav-actions {
+  margin-left: 12px;
   display: flex;
   align-items: center;
   gap: 14px;
