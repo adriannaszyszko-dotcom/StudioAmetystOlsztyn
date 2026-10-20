@@ -68,6 +68,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 24px;
   padding: 10px 32px;
   max-width: var(--maxw);
   margin: 0 auto;
@@ -105,7 +106,8 @@ header {
 }
 .nav-links {
   display: flex;
-  gap: 30px;
+  gap: 24px;
+  white-space: nowrap;
   font-size: 0.93rem;
   color: var(--lilac-300);
 }
@@ -149,6 +151,20 @@ header {
 }
 .nav-toggle {
   display: none;
+}
+@media (max-width: 1180px) {
+  .nav-phone {
+    display: none;
+  }
+}
+@media (max-width: 1080px) {
+  .nav {
+    padding: 10px 20px;
+  }
+  .nav-links {
+    gap: 16px;
+    font-size: 0.86rem;
+  }
 }
 @media (max-width: 900px) {
   .nav-links {
@@ -693,4 +709,14 @@ footer {
   html {
     scroll-behavior: auto;
   }
+}
+
+/* OPINIE */
+.reviews-title {
+  font-size: clamp(1.6rem, 3vw, 2.1rem);
+  color: var(--cream-100);
+  margin-bottom: 28px;
+}
+.reviews-widget {
+  min-height: 200px;
 }
