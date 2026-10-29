@@ -1,7 +1,7 @@
 // Baner zgody na cookies. Google Analytics i Piksel Meta ładują się dopiero po zgodzie.
 (function () {
   var GA_ID = 'G-PL5HDHTKPF';
-  var PIXEL_ID = '863323126814294';
+  var PIXEL_ID = '1430771548922071';
   var KEY = 'ametyst_consent';
   var VERSION = 1;
 
