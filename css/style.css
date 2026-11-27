@@ -184,8 +184,9 @@ header {
 
 /* HERO (subpages) */
 .page-hero {
-  padding: 64px 0 48px;
-  border-bottom: 1px solid var(--line);
+  padding: 56px 0 44px;
+  background: linear-gradient(120deg, #f1ddd8 0%, #f7ebe7 55%, #efdde6 100%);
+  border-bottom: 1px solid rgba(201, 164, 98, 0.35);
 }
 .page-hero .eyebrow {
   color: var(--accent);
@@ -193,7 +194,7 @@ header {
   margin-bottom: 14px;
 }
 .page-hero h1 {
-  font-size: clamp(2.2rem, 4.2vw, 3.2rem);
+  font-size: clamp(1.6rem, 2.55vw, 2.25rem);
   color: var(--ink);
 }
 .page-hero .page-hero-eyebrow {
