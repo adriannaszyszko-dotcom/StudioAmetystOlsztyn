@@ -20,7 +20,7 @@
     try {
       localStorage.setItem(KEY, JSON.stringify(c));
     } catch (e) {}
-    // Wycofanie wcześniej udzielonej zgody – usuwamy cookies i przeładowujemy stronę,
+    // Wycofanie wcześniej udzielonej zgody: usuwamy cookies i przeładowujemy stronę,
     // żeby wczytane już skrypty przestały działać.
     if (prev && ((prev.analytics && !analytics) || (prev.marketing && !marketing))) {
       clearCookies(prev.analytics && !analytics, prev.marketing && !marketing);
@@ -92,9 +92,9 @@
         '<p class="consent-title">Pliki cookies</p>' +
         '<p class="consent-text">Używamy plików cookies, aby sprawdzać, jak korzystasz ze strony (Google Analytics), oraz mierzyć skuteczność naszych reklam na Facebooku i Instagramie (Piksel Meta). Włączymy je tylko za Twoją zgodą. Więcej w <a href="polityka-prywatnosci.html">polityce prywatności</a>.</p>' +
         '<div class="consent-options" hidden>' +
-          '<label><input type="checkbox" checked disabled> Niezbędne – zapamiętanie Twojego wyboru</label>' +
-          '<label><input type="checkbox" data-consent="analytics"> Analityczne – Google Analytics</label>' +
-          '<label><input type="checkbox" data-consent="marketing"> Marketingowe – Piksel Meta</label>' +
+          '<label><input type="checkbox" checked disabled> Niezbędne: zapamiętanie Twojego wyboru</label>' +
+          '<label><input type="checkbox" data-consent="analytics"> Analityczne: Google Analytics</label>' +
+          '<label><input type="checkbox" data-consent="marketing"> Marketingowe: Piksel Meta</label>' +
         '</div>' +
         '<div class="consent-actions">' +
           '<button type="button" class="btn btn-ghost" data-action="reject">Odrzucam</button>' +
