@@ -954,3 +954,6 @@ footer {
 section[id] {
   scroll-margin-top: 110px;
 }
+.services .section-head {
+  max-width: none;
+}
