@@ -1187,3 +1187,11 @@ section[id] {
     aspect-ratio: 16 / 9;
   }
 }
+.br-mobile {
+  display: none;
+}
+@media (max-width: 560px) {
+  .br-mobile {
+    display: inline;
+  }
+}
