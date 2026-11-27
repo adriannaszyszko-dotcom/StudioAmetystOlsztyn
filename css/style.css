@@ -624,10 +624,10 @@ section {
   margin-top: 2px;
 }
 .price-row .amount {
-  font-family: "Gilda Display", serif;
+  font-family: "Manrope", sans-serif;
   color: var(--accent);
   white-space: nowrap;
-  font-weight: 400;
+  font-weight: 700;
 }
 .price-note {
   color: var(--text);
@@ -1001,7 +1001,7 @@ section[id] {
   padding: 48px 0 88px;
 }
 .offer article {
-  scroll-margin-top: 170px;
+  scroll-margin-top: 195px;
 }
 .offer-featured {
   display: grid;
@@ -1199,4 +1199,10 @@ section[id] {
   color: #fff8f3;
   text-decoration: underline;
   text-underline-offset: 3px;
+}
+.price-list {
+  padding-top: 48px;
+}
+.price-cat[id] {
+  scroll-margin-top: 195px;
 }

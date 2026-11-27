@@ -15,7 +15,7 @@
 <meta property="og:image" content="https://studioametyst.pl/images/laser-lucyna.jpg">
 <link rel="preload" href="fonts/manrope-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="css/fonts.css?v=2">
-<link rel="stylesheet" href="css/style.css?v=17">
+<link rel="stylesheet" href="css/style.css?v=18">
 </head>
 <body>
 
@@ -51,10 +51,24 @@
     </div>
   </section>
 
-  <section>
+  <nav class="offer-nav" aria-label="Kategorie cennika">
+    <div class="wrap offer-nav-inner">
+      <a href="#manicure">Manicure</a>
+      <a href="#stopy">Pedicure</a>
+      <a href="#twarz">Twarz</a>
+      <a href="#oprawa-oka">Brwi i rzęsy</a>
+      <a href="#lifting">Lifting</a>
+      <a href="#cialo">Ciało</a>
+      <a href="#wosk">Wosk</a>
+      <a href="#laser">Laser</a>
+      <a href="#alma">Alma Dye-VL</a>
+    </div>
+  </nav>
+
+  <section class="price-list">
     <div class="wrap">
 
-      <div class="price-cat reveal">
+      <div class="price-cat reveal" id="manicure">
         <h2>Stylizacja paznokci</h2>
         <div class="price-row"><span class="name">Manicure klasyczny z odżywką / lakierem</span><span class="amount">80 zł</span></div>
         <div class="price-row"><span class="name">Manicure męski</span><span class="amount">80 zł</span></div>
@@ -73,14 +87,14 @@
         <div class="price-row"><span class="name">Przedłużanie, długi</span><span class="amount">190 zł</span></div>
       </div>
 
-      <div class="price-cat reveal">
+      <div class="price-cat reveal" id="stopy">
         <h2>Pielęgnacja stóp</h2>
         <div class="price-row"><span class="name">Hybryda na paznokciach, kolor</span><span class="amount">120 zł</span></div>
         <div class="price-row"><span class="name">Pedicure hybrydowy z frezowaniem</span><span class="amount">180 zł</span></div>
         <div class="price-row"><span class="name">Pedicure klasyczny bez koloru</span><span class="amount">160 / 180 zł</span></div>
       </div>
 
-      <div class="price-cat reveal">
+      <div class="price-cat reveal" id="oprawa-oka">
         <h2>Stylizacja oprawy oka</h2>
         <div class="price-row"><span class="name">Regulacja brwi</span><span class="amount">30 zł</span></div>
         <div class="price-row"><span class="name">Henna brwi</span><span class="amount">30 zł</span></div>
@@ -97,7 +111,7 @@
 <div class="price-row"><span class="name">PAKIET FULL: brwi z regulacją i koloryzacją + lifting rzęs z koloryzacją i odżywieniem</span><span class="amount">250 zł</span></div>
       </div>
 
-      <div class="price-cat reveal">
+      <div class="price-cat reveal" id="wosk">
         <h2>Depilacja woskiem</h2>
         <div class="price-row"><span class="name">Wąsik</span><span class="amount">30 zł</span></div>
         <div class="price-row"><span class="name">Broda</span><span class="amount">40 zł</span></div>
@@ -108,7 +122,7 @@
         <div class="price-row"><span class="name">Całe nogi + pachwiny</span><span class="amount">150 zł</span></div>
       </div>
 
-      <div class="price-cat reveal">
+      <div class="price-cat reveal" id="twarz">
         <h2>Zabiegi na twarz</h2>
         <div class="price-row"><span class="name">Konsultacja + zabieg pielęgnacyjny dobrany do potrzeb skóry</span><span class="amount">170 zł</span></div>
         <div class="price-row"><span class="name">Cery problematyczne: pielęgnacja NANILI<span class="note">trądzik pospolity / różowaty / acne cera / przebarwienia</span></span><span class="amount">od 170 do 250 zł</span></div>
@@ -120,7 +134,7 @@
         <div class="price-row"><span class="name">Lifting / przebarwienia / blizny po trądziku / kwasy TCA / peeling retinolem</span><span class="amount">od 200 do 300 zł</span></div>
       </div>
 
-      <div class="price-cat reveal">
+      <div class="price-cat reveal" id="lifting">
         <h2>Zabiegi liftingujące: Dermapen</h2>
         <div class="price-row"><span class="name">Twarz + okolice oczu</span><span class="amount">300 zł</span></div>
         <div class="price-row"><span class="name">Twarz + okolice oczu + szyja</span><span class="amount">350 zł</span></div>
@@ -134,7 +148,7 @@
         <div class="price-row"><span class="name">Kwas hialuronowy 1 ml<span class="note">bruzdy / lifting twarzy / usta</span></span><span class="amount">od 650 zł</span></div>
       </div>
 
-      <div class="price-cat reveal">
+      <div class="price-cat reveal" id="cialo">
         <h2>Zabiegi na ciało: endermologia</h2>
         <div class="price-row"><span class="name">Pojedynczy zabieg<span class="note">całe ciało, bez twarzy</span></span><span class="amount">160 zł</span></div>
         <div class="price-row"><span class="name">Karnet 5 zabiegów<span class="note">136 zł / zabieg, oszczędzasz 15%</span></span><span class="amount">680 zł</span></div>
@@ -155,7 +169,7 @@
         <div class="price-row"><span class="name">Karnet 5 zabiegów<span class="note">150 zł / zabieg, oszczędzasz ponad 20%</span></span><span class="amount">750 zł</span></div>
       </div>
 
-      <div class="price-cat reveal">
+      <div class="price-cat reveal" id="laser">
         <h2>Depilacja laserowa</h2>
         <div class="price-row"><span class="name">Wąsik</span><span class="amount">120 zł</span></div>
         <div class="price-row"><span class="name">Broda</span><span class="amount">120 zł</span></div>
@@ -173,7 +187,7 @@
         <div class="price-row"><span class="name">Rabat przy łączeniu partii<span class="note">rabat 10% przy 2 partiach · 15% przy 3 partiach</span></span><span class="amount"></span></div>
       </div>
 
-      <div class="price-cat reveal">
+      <div class="price-cat reveal" id="alma">
         <h2>Kuracja Alma Dye-VL: naczynka, rumień, przebarwienia</h2>
         <div class="price-row"><span class="name">Pojedyncze naczynko / przebarwienie</span><span class="amount">150 zł</span></div>
         <div class="price-row"><span class="name">Czoło</span><span class="amount">300 zł</span></div>
