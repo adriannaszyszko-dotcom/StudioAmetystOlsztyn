@@ -1279,31 +1279,6 @@ section[id] {
     display: none;
   }
 }
-/* Przyciski podstron pod zdjęciem głównym (tylko telefon) */
-.mobile-pages {
-  display: none;
-}
-@media (max-width: 900px) {
-  .mobile-pages {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 8px;
-    margin-top: 20px;
-  }
-  .mobile-pages a {
-    text-align: center;
-    padding: 11px 6px;
-    font-size: 0.86rem;
-    color: var(--ink);
-    background: var(--card);
-    border: 1px solid rgba(59, 30, 51, 0.18);
-    border-radius: 999px;
-  }
-  .mobile-pages a:hover {
-    border-color: var(--accent);
-    color: var(--accent);
-  }
-}
 /* Menu mobilne */
 .mobile-menu {
   display: none;
