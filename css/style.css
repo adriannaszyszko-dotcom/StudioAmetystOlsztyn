@@ -1195,3 +1195,8 @@ section[id] {
     display: inline;
   }
 }
+.cta-text-link {
+  color: #fff8f3;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
