@@ -196,6 +196,13 @@ header {
   font-size: clamp(2.2rem, 4.2vw, 3.2rem);
   color: var(--ink);
 }
+.page-hero .page-hero-eyebrow {
+  font-family: "Manrope", sans-serif;
+  font-size: 1.05rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: var(--accent);
+}
 .page-hero p {
   margin-top: 18px;
   color: var(--text);
