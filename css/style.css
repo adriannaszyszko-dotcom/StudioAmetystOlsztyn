@@ -1256,3 +1256,51 @@ section[id] {
     font-weight: 600;
   }
 }
+/* Telefon w nagłówku na mobile */
+.nav-call {
+  display: none;
+}
+@media (max-width: 900px) {
+  .nav-call {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--ink);
+    background: var(--gold);
+    padding: 10px 18px;
+    border-radius: 999px;
+    white-space: nowrap;
+  }
+}
+@media (max-width: 600px) {
+  .nav-book {
+    display: none;
+  }
+}
+/* Przyciski podstron pod zdjęciem głównym (tylko telefon) */
+.mobile-pages {
+  display: none;
+}
+@media (max-width: 900px) {
+  .mobile-pages {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    margin-top: 20px;
+  }
+  .mobile-pages a {
+    text-align: center;
+    padding: 11px 6px;
+    font-size: 0.86rem;
+    color: var(--ink);
+    background: var(--card);
+    border: 1px solid rgba(59, 30, 51, 0.18);
+    border-radius: 999px;
+  }
+  .mobile-pages a:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+}
