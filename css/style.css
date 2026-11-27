@@ -600,8 +600,9 @@ section {
   margin-bottom: 56px;
 }
 .price-cat h2 {
-  font-family: "Gilda Display", serif;
-  font-size: 1.4rem;
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  font-size: 1.3rem;
   color: var(--accent);
   margin-bottom: 20px;
 }
@@ -1205,4 +1206,13 @@ section[id] {
 }
 .price-cat[id] {
   scroll-margin-top: 195px;
+}
+.page-hero .h1-one-line {
+  font-size: clamp(1.6rem, 2.55vw, 2.25rem);
+}
+@media (min-width: 901px) {
+  .offer-nav-inner a {
+    flex: 1 1 auto;
+    text-align: center;
+  }
 }
