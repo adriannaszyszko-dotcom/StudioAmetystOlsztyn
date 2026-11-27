@@ -1216,3 +1216,40 @@ section[id] {
     text-align: center;
   }
 }
+/* Pasek kategorii na telefonie: siatka 3 kolumny, bez przewijania w bok */
+@media (max-width: 900px) {
+  .offer-nav {
+    position: static;
+  }
+  .offer-nav-inner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    overflow: visible;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  .offer-nav a {
+    padding: 9px 6px;
+    text-align: center;
+    font-size: 0.82rem;
+    background: var(--card);
+  }
+  .offer-nav a.offer-nav-featured {
+    grid-column: 1 / -1;
+    background: var(--rose);
+    border-color: var(--rose);
+    color: #fff8f3;
+  }
+  .offer article,
+  .price-cat[id] {
+    scroll-margin-top: 100px;
+  }
+}
+@media (min-width: 901px) {
+  .offer-nav a.offer-nav-featured {
+    border-color: var(--rose);
+    color: var(--rose);
+    font-weight: 600;
+  }
+}
