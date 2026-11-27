@@ -184,29 +184,31 @@ header {
 
 /* HERO (subpages) */
 .page-hero {
-  padding: 56px 0 44px;
-  background: linear-gradient(120deg, #f1ddd8 0%, #f7ebe7 55%, #efdde6 100%);
-  border-bottom: 1px solid rgba(201, 164, 98, 0.35);
+  padding: 56px 0 46px;
+  background: linear-gradient(120deg, #4a2140 0%, #6e3355 60%, #7a3b5c 100%);
 }
 .page-hero .eyebrow {
-  color: var(--accent);
-  font-size: 0.92rem;
+  color: var(--gold-light);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
   margin-bottom: 14px;
 }
 .page-hero h1 {
   font-size: clamp(1.6rem, 2.55vw, 2.25rem);
-  color: var(--ink);
+  color: #fff8f3;
 }
 .page-hero .page-hero-eyebrow {
   font-family: "Manrope", sans-serif;
   font-size: 1.05rem;
   font-weight: 500;
   line-height: 1.5;
-  color: var(--accent);
+  color: var(--gold-light);
 }
 .page-hero p {
   margin-top: 18px;
-  color: var(--text);
+  color: #ecd6e0;
   font-size: 1.05rem;
 }
 
