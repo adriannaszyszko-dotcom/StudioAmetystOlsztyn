@@ -469,6 +469,66 @@ section {
   }
 }
 
+/* KAFELKI ZABIEGÓW (strona główna) */
+.service-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+.service-tile {
+  display: flex;
+  flex-direction: column;
+  background: var(--card);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.service-tile:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(59, 30, 51, 0.14);
+}
+.service-tile img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+}
+.service-tile-body {
+  padding: 22px 22px 24px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.service-tile h3 {
+  font-size: 1.2rem;
+  color: var(--ink);
+  margin-bottom: 10px;
+}
+.service-tile p {
+  color: var(--text);
+  font-size: 0.92rem;
+  margin-bottom: 16px;
+  flex: 1;
+}
+.service-tile-link {
+  color: var(--accent);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+@media (max-width: 1000px) {
+  .service-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 560px) {
+  .service-cards {
+    grid-template-columns: 1fr;
+  }
+  .service-tile img {
+    aspect-ratio: 16 / 10;
+  }
+}
+
 /* GALLERY */
 .gallery-grid {
   columns: 3 260px;
@@ -889,4 +949,7 @@ footer {
 .cta-band:not(.cta-band--soft) .btn-ghost:hover {
   border-color: #fff8f3;
   background: rgba(255, 248, 243, 0.1);
+}
+section[id] {
+  scroll-margin-top: 110px;
 }
