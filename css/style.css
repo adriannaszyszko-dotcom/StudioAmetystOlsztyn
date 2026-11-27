@@ -195,11 +195,9 @@ header {
 .page-hero h1 {
   font-size: clamp(2.2rem, 4.2vw, 3.2rem);
   color: var(--ink);
-  max-width: 26ch;
 }
 .page-hero p {
   margin-top: 18px;
-  max-width: 52ch;
   color: var(--text);
   font-size: 1.05rem;
 }
@@ -956,4 +954,26 @@ section[id] {
 }
 .services .section-head {
   max-width: none;
+}
+
+/* PODSTRONA ZABIEGI – mniejsze zdjęcia */
+.offer-grid {
+  grid-template-columns: 280px 1fr;
+  gap: 48px;
+}
+.offer-grid.reverse {
+  grid-template-columns: 1fr 280px;
+}
+@media (max-width: 860px) {
+  .offer-grid,
+  .offer-grid.reverse {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .offer-grid img {
+    aspect-ratio: 16 / 10;
+  }
+}
+section:has(> .offer-grid) {
+  padding: 56px 0;
 }
